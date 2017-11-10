@@ -2,7 +2,7 @@
 layout: post
 title: "使用commons-net进行ftp下载的注意事项"
 date: 2017-07-11 11:40
-tags: 前端 
+tags: java 
 category: 随笔
 description: 使用commons-net递归下载指定目录下的所有文件。
 
