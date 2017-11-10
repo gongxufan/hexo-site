@@ -14,7 +14,7 @@ description: 使用python统计一个文件内的单词出现频次，并找出�
 ## 读取文件
 
 读取文件在python里简直轻而易举，直接使用open方法就可以拿到文件句柄。同时令人惊叹的是优雅的错误处理和文件关闭策略，基本代码如下：
-```javascript
+```python
 with open(file, 'r') as f:  
             content = f.read()  
 ```
@@ -23,7 +23,7 @@ with open(file, 'r') as f:
 
 这里使用内置的re模块进行正则抽取，这里只是简单的按照\w分词
 
-```sql
+```python
 for word in re.findall("\w+", content):
     self.mapping[word] = self.mapping.get(word, 0) + 1  
 ```
@@ -46,7 +46,7 @@ iterable主要包括3类：
 
 通常来说，key和reverse比一个等价的cmp函数处理速度要快。这是因为对于每个列表元素，cmp都会被调用多次，而key和reverse只被调用一次。
 
-```javascript
+```python
  sorted(self.mapping.items(), key=lambda item: item[1], reverse=True)[:n] 
 ```
 
@@ -54,7 +54,7 @@ iterable主要包括3类：
 
 ## 完整代码
 
-```javascript
+```python
 # -*- coding: UTF-8 -*-  
 import collections  
 import re  
@@ -86,7 +86,7 @@ if '__main__' == __name__:
 Counter在构造方法中读取文件然后使用正则分割单词存到序列中，遍历的时候统计单词出现次数。这里使用了dict的get(key,defaultValue)方法，第一次出现设置初始值为0。最后在统计排名的时候使用sorted内置函数。其实这字典值的统计排名可以使用内置的collections模块进行操作，而且其实现更加高效和可靠。
 
 比如most_common方法：
-```javascript
+```python
 def most_common(self, n=None):  
     '''''List the n most common elements and their counts from the most 
     common to the least.  If n is None, then list all element counts. 
@@ -103,7 +103,7 @@ def most_common(self, n=None):
 
 对指定的长度进行统计会针对各种情况进行优化处理：
 
-```javascript
+```python
 def nlargest(n, iterable, key=None):  
     """Find the n largest elements in a dataset. 
  
