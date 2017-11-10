@@ -225,7 +225,7 @@ paint对遍历所有可见对象 ，依次调用repaint方法。
 
 ### 节点连线
 这里采用的连线方法是在节点按下鼠标左键，然后松开鼠标则创建一个连线，起点是被点击的节点，终点则随鼠标移动而动态更新。因此单机一个节点松开鼠标则可以看到随鼠标移动的一条连线。然后在某个节点点击左键松开怎完成了两个节点的连线。效果如下：
-![img](/upload/images/topology/line.git)
+![img](/upload/images/topology/line.gif)
 
 部分代码实现如下：
 ![img](/upload/images/topology/code.png)
