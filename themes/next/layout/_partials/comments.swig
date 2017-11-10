@@ -29,13 +29,6 @@
           Please enable JavaScript to view the
           <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
         </noscript>
-        <script>
-              var idcomments_acct = '5f980fb685d9eca708e4ec93983b3255';
-              var idcomments_post_id;
-              var idcomments_post_url;
-          </script>
-          <span id="IDCommentsPostTitle" style="display:none"></span>
-          <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
       </div>
     </div>
 
@@ -71,6 +64,23 @@
 
   {% elseif theme.valine.appid and theme.valine.appkey %}
     <div class="comments" id="comments">
+    </div>
+
+  {% elseif theme.intensedebate.enable %}
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://www.intensedebate.com?ref_noscript">comments powered by intensedebate.</a>
+        </noscript>
+        <script>
+              var idcomments_acct = '5f980fb685d9eca708e4ec93983b3255';
+              var idcomments_post_id;
+              var idcomments_post_url;
+          </script>
+          <span id="IDCommentsPostTitle" style="display:none"></span>
+          <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+      </div>
     </div>
   {% endif %}
 

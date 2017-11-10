@@ -12,5 +12,5 @@
     <div class="-mob-share-close">取消</div>
 </div>
 <div class="-mob-share-ui-bg"></div>
-<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=你的appkey"></script>
+<script id="-mob-share" src="https://f1.webshare.mob.com/code/mob-share.js?appkey=你的appkey"></script>
 <!--MOB SHARE END-->

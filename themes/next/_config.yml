@@ -344,14 +344,17 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-baidu_analytics: cc25ff857320d97b4a5ac817b3992810
+#baidu_analytics: cc25ff857320d97b4a5ac817b3992810
 
 # Duoshuo ShortName
 #duoshuo_shortname:
 
+#intensedebate
+intensedebate:
+  enable: true
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: disqus
   count: true
 
