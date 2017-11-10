@@ -5,12 +5,13 @@ date: 2016-12-07 10:17
 tags: [javascript,前端]
 category: 工作日志
 description: 基于Jtopo实现的在线网络拓扑设计和编辑，可以创建复杂网络并对网络和设备进行各种操作，提供拓扑的序列化和反序列以及分层编辑操作。
+top: 999
 ---
 ## 写在前面
 
 本文实现了基于Jtopo的在线网络拓扑设计和编辑，可以创建复杂网络并对网络和设备进行各种操作，提供拓扑的序列化和反序列操作。
 
-为了方便演示，我已经把一个静态DEMO部署到github，[传送门](https://gongxufan.github.io/web-topology/topologyEditor.html){:target="_blank"}
+为了方便演示，我已经把一个静态DEMO部署到github，[传送门](https://gongxufan.github.io/web-topology/topologyEditor.html)
 
 关于项目访问,因为读取远程json数据,直接用浏览器打开会有安全限制.请将项目放到tomcat启动访问或者直接用idea/webstorm打开项目直接右键打开,如下图所示:
 ![img](/upload/images/topology/how-to-open.png)
