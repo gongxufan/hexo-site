@@ -2,9 +2,9 @@
 layout: post
 title: "【python笔记】- 统计文件单词出现频次"
 date: 2017-11-08 10:45
-tags: python 
+tags: python2.x
 category: 随笔
-description: 使用python统计一个文件内的单词出现频次，并找出出现频率最高的N个单词
+description: 使用python统计一个文件内的单词出现频次，并找出出现频率最高的N个单词。
 
 ---
 ## 写在前面
