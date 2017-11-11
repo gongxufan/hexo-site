@@ -3,7 +3,7 @@ layout: post
 title: "归并排序Java实现"
 date: 2016-03-10 15:54
 tags: 算法
-category: 日志
+category: 随笔
 description: 归并排序的java实现。
 
 ---

@@ -137,11 +137,12 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
-links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+links_title: 友情链接
+#links_layout: block
+links_layout: inline
+links:
+  hexo: https://hexo.io/
+  github: https://github.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -161,7 +162,7 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-creative_commons: by-nc-sa
+#creative_commons: zero
 #creative_commons:
 
 sidebar:
