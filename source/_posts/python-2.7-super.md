@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python2.7继承使用super初始化父类的坑"
+title: "Python2.7继承使用super初始化父类"
 date: 2017-11-01 16:16
 tags: python2.x
 category: 随笔
@@ -54,6 +54,7 @@ if __name__ == "__main__":
     stu.showSex()  
 ```
 在子类的__init__中调用父类构造有两种方式：
+
 - 一种是用父类名去调用
 ```python
 Person.__init__(self,sex)  
@@ -109,7 +110,7 @@ class C(A):
         print('called C.foo()')  
   
   
-class D(B, C<span style="color:#009900;">,object</span>):  
+class D(B, C,object):  
     pass  
   
   
@@ -117,5 +118,7 @@ if __name__ == '__main__':
     d = D()  
     d.foo() 
 ```
-运行：called C.foo()
+运行：
+>called C.foo()
+
 可见在调用父类方法查找的时候顺不一样。经典类会从根部开始，新式类从最接近子类的位置开始匹配。
