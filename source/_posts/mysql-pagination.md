@@ -1,7 +1,7 @@
 ---
  layout: post
  title: "Efficient pagination of a table with 100M records"
- date: 2017-11-06 15:16
+ date: 2016-11-06 15:16
  tags: mysql
  category: 转载
  description: 海量数据分页查询优化的另一个视角。
@@ -137,4 +137,4 @@ The main topic for the blog post was related to scanning a large table with 100 
 Overall, 3 different approaches were reviewed and tested on the corresponding dataset. I recommend only one of them if you need to scan a mutable large table.
 Also, we revised usage of EXPLAIN EXTENDED command to analyze execution plan of MySQL queries. I am sure that other RDBMS have analogs for the functionality.
 
-原文地址：http://allyouneedisbackend.com/blog/2017/09/24/the-sql-i-love-part-1-scanning-large-table/
+原文地址：http://allyouneedisbackend.com/blog/2016/09/24/the-sql-i-love-part-1-scanning-large-table/

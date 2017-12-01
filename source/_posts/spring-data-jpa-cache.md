@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "spring-data-jpa使用缓存的注意事项"
-date: 2017-07-20 14:14
+date: 2016-07-20 14:14
 tags: [java,spring] 
 category: 随笔
 description: 使用spring-data-jpa的查询缓存和二级缓存的注意事项。
@@ -118,7 +118,7 @@ Hibernate:
     where  
         human0_.humanID=?  
 true  
-2017-07-20 14:24:30 INFO main org.hibernate.engine.internal.StatisticalLoggingSessionEventListener - Session Metrics {  
+2016-07-20 14:24:30 INFO main org.hibernate.engine.internal.StatisticalLoggingSessionEventListener - Session Metrics {
     399787 nanoseconds spent acquiring 1 JDBC connections;  
     0 nanoseconds spent releasing 0 JDBC connections;  
     114082560 nanoseconds spent preparing 1 JDBC statements;  
@@ -275,7 +275,7 @@ import javax.persistence.*;
   
 /** 
  * 系统菜单 
- * Created by gongxufan on 2017/3/13. 
+ * Created by gongxufan on 2016/3/13.
  */  
 @Entity  
 @Table(name = "TCSYSNAVMENU")  
@@ -459,7 +459,7 @@ import javax.persistence.QueryHint;
 import java.util.List;  
   
 /** 
- * Created by gongxufan on 2017/3/13. 
+ * Created by gongxufan on 2016/3/13.
  */  
 public interface SysNavRepository extends PagingAndSortingRepository<NavMenu, Integer> {  
   
@@ -505,7 +505,7 @@ Hibernate:
         )   
     order by  
         navmenu0_.displayOrder  
-2017-07-20 14:32:13 INFO main org.hibernate.engine.internal.StatisticalLoggingSessionEventListener - Session Metrics {  
+2016-07-20 14:32:13 INFO main org.hibernate.engine.internal.StatisticalLoggingSessionEventListener - Session Metrics {
     445013 nanoseconds spent acquiring 1 JDBC connections;  
     0 nanoseconds spent releasing 0 JDBC connections;  
     179244800 nanoseconds spent preparing 1 JDBC statements;  
@@ -517,7 +517,7 @@ Hibernate:
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);  
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)  
 }  
-2017-07-20 14:32:13 INFO main org.hibernate.engine.internal.StatisticalLoggingSessionEventListener - Session Metrics {  
+2016-07-20 14:32:13 INFO main org.hibernate.engine.internal.StatisticalLoggingSessionEventListener - Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;  
     0 nanoseconds spent releasing 0 JDBC connections;  
     0 nanoseconds spent preparing 0 JDBC statements;  

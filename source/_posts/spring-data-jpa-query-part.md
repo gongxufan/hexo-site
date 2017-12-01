@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "spring-data-jpa只查询实体部分字段的情况"
-date: 2017-03-29 11:46
+date: 2016-03-29 11:46
 tags: [spring,java]
 category: 随笔
 description: 使用jpa查询默认会返回表的全部字段，为了查询效率和安全考虑我们有时候需要控制查询返回的字段范围。

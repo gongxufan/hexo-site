@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "hexo使用next主题统计文章字符和阅读时长"
-date: 2017-11-10 21:20
-tags: hexo
+date: 2016-11-10 21:20
+tags: javascript
 category: 随笔
 description: 使用hexo-wordcount插件统计文章字数和阅读时长。
 

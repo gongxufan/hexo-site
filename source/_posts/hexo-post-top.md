@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "如何将hexo生成的文章置顶"
-date: 2017-11-10 15:54
-tags: hexo
+date: 2016-11-10 15:54
+tags: javascript
 category: 随笔
 description: 使用hexo -g命令生成的博客首页文章列表默认是按照文章创建日期倒序排列的,如果我们想实现置顶功能则可以通过修改生成器代码来实现。
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "如何正确使用Java8的Optional机制"
-date: 2017-10-23 14:54
+date: 2016-10-23 14:54
 tags: java
 category: 随笔
 description: Java8的Optional机制的正确认识和使用方法。
@@ -102,7 +102,7 @@ import java.util.List;
   
 /** 
  * @auth gongxufan 
- * @Date 2017/10/23 
+ * @Date 2016/10/23
  **/  
 public class Goods {  
     private String goodsName;  
@@ -140,7 +140,7 @@ import java.time.LocalDateTime;
   
 /** 
  * @auth gongxufan 
- * @Date 2017/10/23 
+ * @Date 2016/10/23
  **/  
 public class Order {  
     private LocalDateTime createTime;  

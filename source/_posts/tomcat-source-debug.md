@@ -2,7 +2,7 @@
 layout: post
 title: "【基于IntelliJ IDEA环境】Tomcat8源码的调试和项目部署"
 date: 2017-10-20 12:32
-tags: [java,tomcat]
+tags: [tomcat]
 category: 随笔
 description: 搭建tomcat8的源码编译和调试环境，详细记录调试工程的配置过程和注意点。
 ---

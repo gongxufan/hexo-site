@@ -2,7 +2,7 @@
 layout: post
 title: "基于Jtopo的网络拓扑编辑器初探"
 date: 2016-12-07 10:17
-tags: [javascript,前端]
+tags: [javascript]
 category: 工作日志
 description: 基于Jtopo实现的在线网络拓扑设计和编辑，可以创建复杂网络并对网络和设备进行各种操作，提供拓扑的序列化和反序列以及分层编辑操作。
 top: 999

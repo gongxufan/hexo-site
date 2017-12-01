@@ -27,7 +27,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Java, 技术分享,Python,技术博客,Android"
+keywords: "Java, 技术分享,Python,技术博客,Android,潇湘往事,gongxufan潇湘往事-Blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -143,6 +143,8 @@ links_layout: inline
 links:
   hexo: https://hexo.io/
   github: https://github.com/
+  stackoverflow: https://stackoverflow.com/
+  ActiveState: https://code.activestate.com
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -226,7 +228,7 @@ post_wordcount:
   wordcount: true
   min2read: true
   totalcount: true
-  separated_meta: true
+  separated_meta: false
 
 # Wechat Subscriber
 wechat_subscriber:
@@ -235,7 +237,7 @@ wechat_subscriber:
   description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-#reward_comment: Donate comment here
+reward_comment: 坚持原创，看官随意。
 wechatpay: /upload/images/wechatpay.jpeg
 alipay: /upload/images/alipay.jpeg
 
@@ -345,7 +347,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics: cc25ff857320d97b4a5ac817b3992810
+baidu_analytics: cc25ff857320d97b4a5ac817b3992810
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -451,7 +453,7 @@ needmoreshare2:
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
   float:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
@@ -570,7 +572,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -673,7 +675,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -690,13 +692,13 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme:  pace-theme-minimal
 
 # Canvas-nest
 canvas_nest: false
 
 # three_waves
-three_waves: false
+three_waves: true
 
 # canvas_lines
 canvas_lines: false

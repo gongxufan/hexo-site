@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python2.7继承使用super初始化父类"
-date: 2017-11-01 16:16
+date: 2016-11-01 16:16
 tags: python2.x
 category: 随笔
 description: python类继承初始化父类的注意事项。

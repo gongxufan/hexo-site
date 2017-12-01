@@ -45,12 +45,14 @@ Oracle Java 8
 1. sudo add-apt-repository ppa:webupd8team/java  
 2. sudo apt-get update  
 3. sudo apt-get install oracle-java8-installer 
+
 ## 安装网易云音乐
 下载地址：http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
 ```sql
 sudo apt install libqt5multimediawidgets5  
 sudo dpkg -i netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb  
 ```
+或者直接`sudo apt install netease-cloud-music`
 ## 安装解码和flash插件
 `sudo apt install flashplugin-installer gstreamer1.0-fluendo-mp3 ttf-mscorefonts-installer
 `
@@ -143,3 +145,67 @@ for python3+
 
 for python2+
 `sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose `
+## 禁用笔记本触摸板
+禁用 sudo rmmod psmouse 
+开启 sudo modprobe psmouse
+注意这里执行禁用会把触点功能也关闭，如果只禁用触摸板的可以安装pointing-device
+## 安装redis
+`sudo apt-get install redis-server`
+### 查看进程
+```
+gongxufan@gongxufan-ThinkPad-E460 ~ $ ps -aux|grep redis
+redis     5938  0.1  0.0  41880  6644 ?        Ssl  15:44   0:00 /usr/bin/redis-server 127.0.0.1:6379
+gongxuf+  6040  0.0  0.0  15988  1020 pts/0    S+   15:45   0:00 grep --color=auto redis
+
+```
+### 查看服务状态
+```
+gongxufan@gongxufan-ThinkPad-E460 ~ $ sudo /etc/init.d/redis-server status
+● redis-server.service - Advanced key-value store
+   Loaded: loaded (/lib/systemd/system/redis-server.service; enabled; vendor preset: enabled)
+   Active: active (running) since 四 2017-11-16 15:44:11 CST; 1min 55s ago
+     Docs: http://redis.io/documentation,
+           man:redis-server(1)
+ Main PID: 5938 (redis-server)
+   CGroup: /system.slice/redis-server.service
+           └─5938 /usr/bin/redis-server 127.0.0.1:6379
+
+11月 16 15:44:11 gongxufan-ThinkPad-E460 systemd[1]: Starting Advanced key-value store...
+11月 16 15:44:11 gongxufan-ThinkPad-E460 run-parts[5920]: run-parts: executing /etc/redis/redis-server....ple
+11月 16 15:44:11 gongxufan-ThinkPad-E460 run-parts[5939]: run-parts: executing /etc/redis/redis-server....ple
+11月 16 15:44:11 gongxufan-ThinkPad-E460 systemd[1]: Started Advanced key-value store.
+Hint: Some lines were ellipsized, use -l to show in full.
+```
+### 查看服务端口
+```
+gongxufan@gongxufan-ThinkPad-E460 ~ $ netstat -nlt|grep 6379
+tcp        0      0 127.0.0.1:6379          0.0.0.0:*               LISTEN     
+```
+### 客户端访问
+```
+gongxufan@gongxufan-ThinkPad-E460 ~ $ redis-cli
+127.0.0.1:6379> help
+redis-cli 3.0.6
+Type: "help @<group>" to get a list of commands in <group>
+      "help <command>" for help on <command>
+      "help <tab>" to get a list of possible help topics
+      "quit" to exit
+127.0.0.1:6379> keys
+(error) ERR wrong number of arguments for 'keys' command
+127.0.0.1:6379> keys *
+(empty list or set)
+127.0.0.1:6379> 
+
+```
+## 安装nginx
+`sudo apt-get install nginx`
+配置文件位于：/etc/nginx
+服务启动控制：
+```
+#重新加载配置
+sudo service nginx reload
+#启动停止
+sudo service nginx restart
+sudo service nginx stop
+```
+

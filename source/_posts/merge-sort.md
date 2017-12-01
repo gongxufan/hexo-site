@@ -19,7 +19,7 @@ import java.util.Arrays;
  * 归并排序
  *
  * @auth gongxufan
- * @Date 2017/8/2
+ * @Date 2016/8/2
  **/
 public class MergeSort {
     /**

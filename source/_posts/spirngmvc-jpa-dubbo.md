@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "基于springmvc+spring-data-jpa+dubbo开发web应用"
-date: 2017-05-12 11:23
+date: 2016-05-12 11:23
 tags: [spring,java]
 category: 随笔
 description: 集成springMVC、spring-data-jpa,dubbo进行web开发。
@@ -31,7 +31,7 @@ import javax.ws.rs.core.MediaType;
   
 /** 
  * 人员相关接口 
- * Created by gongxufan on 2017/3/8. 
+ * Created by gongxufan on 2016/3/8.
  */  
 @Path("humans")  
 @Consumes({MediaType.APPLICATION_JSON, MediaType.TEXT_XML})  
@@ -67,7 +67,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;  
   
 /** 
- * Created by gongxufan on 2017/3/30. 
+ * Created by gongxufan on 2016/3/30.
  */  
 @XmlRootElement  
 @XmlAccessorType(XmlAccessType.FIELD)  

@@ -12,6 +12,33 @@ description: 树的数据结构数组表示，一种是带pid形式的一维数�
 ## 数组降级
 ```javascript
 /**
+ * 将平行父子数据结构转为层次结构
+ * @param nodes
+ * @returns {Array}
+ */
+function nodes2Array(nodes) {
+    if (!nodes) return [];
+    var childKey = "sub_button",
+        r = [];
+    if (nodes instanceof Array) {
+        for (var i = 0, l = nodes.length; i < l; i++) {
+            r.push(nodes[i]);
+            if (nodes[i][childKey])
+                r = r.concat(nodes2Array(nodes[i][childKey]));
+        }
+    } else {
+        r.push(nodes);
+        if (nodes[childKey])
+            r = r.concat(nodes2Array(nodes[childKey]));
+    }
+    return r;
+}
+```
+nodes2Array将带有子节点的数据展开，变成平级的一维数组
+
+## 维度提升
+```javascript
+/**
  * 将一个层次的数据结构，转换为平行的父子数据结构
  * @param nodesArray
  * @returns {*}
@@ -43,37 +70,11 @@ function array2Nodes(nodesArray) {
         return [nodesArray];
     }
 }
-```
-array2Nodes将带有子节点的数据展开，变成平级的一维数组
 
-## 维度提升
-```javascript
-/**
- * 将平行父子数据结构转为层次结构
- * @param nodes
- * @returns {Array}
- */
-function nodes2Array(nodes) {
-    if (!nodes) return [];
-    var childKey = "sub_button",
-        r = [];
-    if (nodes instanceof Array) {
-        for (var i = 0, l = nodes.length; i < l; i++) {
-            r.push(nodes[i]);
-            if (nodes[i][childKey])
-                r = r.concat(nodes2Array(nodes[i][childKey]));
-        }
-    } else {
-        r.push(nodes);
-        if (nodes[childKey])
-            r = r.concat(nodes2Array(nodes[childKey]));
-    }
-    return r;
-}
 ```
-nodes2Array按照指定的key生成自包含的数组，这里是微信的sub_button(其他场景可以自定义key)。
+array2Nodes按照指定的key生成自包含的数组，这里是微信的sub_button(其他场景可以自定义key)。
 
-##　测试
+## 测试
 ```javascript
 var menuArray = [{
     "id": "AE9CB92989FFB1523D8C63C3124AB372F074F8898BE7B930FABCE06BF60CB237",
@@ -138,7 +139,7 @@ console.log(nodes2Array(nodes));
 在后台管理系统中树的操作是很频繁的，一般在后台查询采用递归，而这样往往逻辑复杂不易维护。比如要展示一颗部门的树，我们先定义个Unit类：
 ```java
 /**
- * Created by gongxufan on 2017/3/13.
+ * Created by gongxufan on 2016/3/13.
  */
 @Entity
 @Table(name="tcUnit")

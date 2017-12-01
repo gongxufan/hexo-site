@@ -2,7 +2,7 @@
 layout: post
 title: "【基于Ijkplayer】安卓机顶盒电视播放器开发"
 date: 2017-10-30 17:27
-tags: [java,android]
+tags: [android]
 category: 随笔
 description: 开发一个安卓机顶盒的电视直播app。
 

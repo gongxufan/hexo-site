@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "tomcat和servlet以及jdk版本的对应关系"
-date: 2017-11-07 14:28
-tags: [servlet,tomcat]
+date: 2016-11-07 14:28
+tags: [tomcat]
 category: 随笔
 description: 介绍servlet、tomcat和jdk的版本关系。
 ---
